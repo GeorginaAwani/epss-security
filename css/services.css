@@ -1,0 +1,117 @@
+#servicesAccordion .card-link {
+    color: var(--secondary);
+}
+
+#servicesAccordion .card-link svg {
+    transition: all .2s ease;
+}
+
+#servicesAccordion .card-link:hover {
+    color: var(--dark);
+}
+
+#servicesAccordion .card-link[aria-expanded="true"] {
+    color: var(--dark-blue) !important;
+    font-weight: 600;
+}
+
+#servicesAccordion .card-link[aria-expanded="true"] .service-icon {
+    color: var(--warning) !important;
+}
+
+#servicesList .service-icon {
+    left: -2rem;
+    font-size: 3.5rem;
+    opacity: 0.1;
+}
+
+#servicesList .service-counter {
+    font-size: 3rem;
+    font-weight: 900;
+    opacity: .35;
+    /* opacity: 1; */
+}
+
+#servicesList .service-row h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 30%;
+    background-color: currentColor;
+    bottom: 0;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+#servicesList .service-img::after {
+    z-index: 1;
+    opacity: 0.6;
+    background-color: currentColor;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+#servicesList .service-img:hover::after,
+#servicesList .service-row.active .service-img::after {
+    background-color: transparent !important;
+    border: 10px solid currentColor;
+}
+
+#servicesList .service-row:first-child {
+    --accent: var(--orange);
+}
+
+#servicesList .service-row:nth-child(2) {
+    --accent: #ff2100;
+}
+
+#servicesList .service-row:nth-child(3) {
+    --accent: #e83e6f;
+}
+
+#servicesList .service-row:nth-child(4) {
+    --accent: #a642c1;
+}
+
+#servicesList .service-row:nth-child(5) {
+    --accent: #7f10f2;
+}
+
+#servicesList .service-img,
+#servicesList .service-counter,
+#servicesList .service-icon,
+#servicesList h2::before {
+    color: var(--accent);
+}
+
+@media screen and (min-width: 768px) {
+    #bann .banner-block {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #servicesList .service-counter {
+        font-size: 2.5rem;
+    }
+    #servicesList h2 {
+        font-size: 1.25rem;
+    }
+    #servicesList .service-row h2::before {
+        height: 14px;
+    }
+    /* .service-row p {
+        font-size: 1rem;
+    } */
+}
+
+#servicesList .service-row.active .service-counter {
+    opacity: 0.6;
+}
+
+#servicesList .service-row.active .heading::before {
+    opacity: 0.45;
+}

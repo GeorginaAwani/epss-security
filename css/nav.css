@@ -1,0 +1,82 @@
+#nvLg {
+    height: 55px;
+}
+
+#mnNavCllps {
+    flex-grow: 0.8;
+}
+
+#mnNavCllps .nav-link {
+    color: var(--gray);
+}
+
+#mnNavCllps .nav-link.active {
+    font-weight: 700;
+    color: #000;
+}
+
+#mnNavCllps .nav-link:hover::before,
+#mnNavCllps .nav-link.active::before {
+    width: 100%;
+}
+
+#mnNavCllps .nav-link:hover {
+    color: #000;
+}
+
+#mnNavCllps .nav-link.active::before {
+    opacity: 0.3;
+}
+
+#mnNavCllps .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0.4rem;
+    left: 0;
+    width: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 12px;
+    background-color: var(--blue);
+    transition: all .3s ease;
+    opacity: 0.15;
+}
+
+#mnNav .navbar-bar {
+    width: 25px;
+    height: 2px;
+    background-color: #bebebe;
+    transition: all .2s ease-in;
+}
+
+#mnNav .navbar-bar+.navbar-bar {
+    margin-top: 5px;
+}
+
+#mnNav .navbar-toggler:not([aria-expanded="true"]):hover .navbar-bar+.navbar-bar {
+    margin-top: 7px;
+}
+
+#mnNav .navbar-toggler[aria-expanded="true"] .navbar-bar:not(:first-child):not(:last-child) {
+    opacity: 0;
+}
+
+#mnNav .navbar-toggler[aria-expanded="true"] .navbar-bar:first-child {
+    transform: rotate(45deg) translateX(10px);
+}
+
+#mnNav .navbar-toggler[aria-expanded="true"] .navbar-bar:last-child {
+    transform: rotate(-45deg) translateX(10px);
+}
+
+@media screen and (max-width: 991px) {
+    #mnNavCllps .nav-link.active::before {
+        right: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #nvLg {
+        height: 50px;
+    }
+}

@@ -1,0 +1,29 @@
+#contactDetails>ul {
+    font-size: 1.1rem;
+}
+
+#contactDetails>ul>li+li {
+    margin-top: 1.3rem;
+}
+
+#contactForm .form-control {
+    height: auto;
+    border: 2px solid #d6d6d6;
+}
+
+#contactForm .form-control:focus {
+    box-shadow: none;
+    border-color: var(--dark);
+}
+
+@media screen and (min-width: 768px) {
+    #bann .banner-block {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contactForm .form-control {
+        font-size: 1rem;
+    }
+}

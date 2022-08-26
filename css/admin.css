@@ -1,0 +1,186 @@
+.form-control {
+    height: auto;
+    background-color: #f7f7f7;
+    border-color: transparent;
+}
+
+.form-control:valid,
+.form-control:focus {
+    border: 1px solid #d6d6d6;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.form-control[contenteditable] {
+    height: 15rem;
+}
+
+.pfp {
+    width: 2.2rem;
+    height: 2.2rem;
+    overflow: hidden;
+}
+
+.pfp img {
+    height: 3rem;
+}
+
+/**
+SIDE NAV
+**/
+
+#sideNavNav .nav-link {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    background-color: var(--dark-blue);
+}
+
+#sideNavNav .nav-link.active {
+    background-color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+#sideNavNav .nav-link.nav-link-prev {
+    border-bottom-right-radius: 1.5rem !important;
+}
+
+#sideNavNav .nav-link.nav-link-next {
+    border-top-right-radius: 1.5rem !important;
+}
+
+#sideNavNav .nav-link.active {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+#sideNavNav .nav-link svg {
+    transition: inherit;
+}
+
+#sideNavNav .nav-link.active svg {
+    color: var(--orange);
+}
+
+@media screen and (max-width: 991px) {
+    #sideNavNav {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        top: 0;
+        z-index: 9;
+        background-color: var(--dark-blue);
+        transition: all .3s ease;
+        white-space: nowrap;
+        left: -100%;
+    }
+
+    #sideNavNav.show {
+        left: 0;
+    }
+
+    #sideNavOpen {
+        font-size: 1.5rem;
+    }
+
+    #main .nav.nav-pills {
+        overflow-x: scroll;
+        /* overflow-y: hidden; */
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        min-height: 0;
+        min-width: 0;
+    }
+
+    #sideNavClose {
+        font-size: 1.5rem;
+    }
+}
+
+
+/**
+MAIN
+**/
+
+#main {
+    max-height: 100%;
+}
+
+#main .nav-pills .nav-link.active {
+    background-color: transparent;
+    color: var(--dark-blue);
+}
+
+#main .nav-pills .nav-link {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+#main .nav-pills .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: 0 auto;
+    transition: all .2s ease-in;
+    background-color: var(--orange);
+}
+
+#main .nav-pills .nav-link.active::before {
+    width: 100%;
+}
+
+.media video {
+    width: auto;
+    min-width: 8rem;
+}
+
+.media img {
+    width: 7rem;
+}
+
+.media img,
+.media video {
+    height: 6rem;
+    object-fit: cover;
+}
+
+.table thead th {
+    border-bottom: none;
+    border-top: none;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.desc-wp {
+    max-height: 7rem;
+    overflow-y: auto;
+    white-space: pre-line;
+}
+
+.table-img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.ws-nowrap {
+    white-space: nowrap;
+}
+
+.edit-form-img.full-img {
+    height: 20rem;
+}

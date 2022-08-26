@@ -1,0 +1,128 @@
+#bann {
+    height: 31rem;
+}
+
+.banner .banner-heading {
+    font-size: 3rem;
+}
+
+#featuresList .heading {
+    font-size: 1.1rem;
+}
+
+#featuresList>li {
+    border: 2px solid var(--gray);
+    border-collapse: collapse;
+    margin-top: -2px;
+    display: block;
+}
+
+#featuresList>li:hover {
+    border-color: var(--warning);
+    z-index: 2;
+}
+
+#featuresList svg {
+    font-size: 3rem;
+    opacity: 0.3;
+    color: var(--gray);
+}
+
+#featuresList>li:hover svg {
+    opacity: 0.4;
+    color: var(--light);
+}
+
+
+/**
+SERVICES
+**/
+
+#services .service-card svg {
+    font-size: 2.7rem;
+    color: var(--warning);
+}
+
+#services .service-card {
+    background-color: #fff;
+}
+
+#services .service-card:hover {
+    background-color: var(--warning);
+}
+
+#services .service-card:hover svg {
+    color: var(--dark-blue);
+}
+
+#services .service-card .btn {
+    color: #000;
+}
+
+#services .service-card:hover .btn {
+    color: #fff;
+}
+
+#services .service-card::before,
+#services .service-card::after {
+    content: '';
+    position: absolute;
+    font-size: 9rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    opacity: 0.05;
+    background-color: currentColor;
+    z-index: -1;
+    transition: inherit;
+}
+
+#services .service-card::before {
+    top: 2rem;
+    left: 3.5rem;
+}
+
+#services .service-card::after {
+    opacity: 0;
+    top: 5rem;
+    left: 7rem;
+    color: var(--orange);
+}
+
+#services .service-card:hover::before {
+    /* opacity: 0; */
+    transform: scale(0.9);
+    opacity: 0.03;
+}
+
+#services .service-card:hover::after {
+    opacity: 0.2;
+    transform: scale(1.7);
+}
+
+
+/**
+TESTIMONIALS
+**/
+
+#carouselSlide [data-slide] {
+    opacity: 1;
+    width: auto;
+    font-size: 2.2rem;
+}
+
+#news .media.bg-img {
+    height: 17rem;
+}
+
+#news .news-item:first-child {
+    background-color: var(--light);
+}
+
+#news .news-item:nth-child(2) {
+    background-color: #ebeced;
+}
+
+#news .news-item:nth-child(3) {
+    background-color: #dddfe1;
+}

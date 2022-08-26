@@ -1,0 +1,127 @@
+#introImg::after {
+    background-color: #4169e1ab;
+    background: linear-gradient(225deg, #4169e1b5, #000000e6);
+    background: linear-gradient(226deg, #ffc10740, #000000e6);
+}
+
+#process ol {
+    list-style-type: decimal-leading-zero;
+}
+
+#process li::marker {
+    color: var(--warning);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#introducton2Icon {
+    left: 0;
+    font-size: 18rem;
+    top: 8rem;
+}
+
+#clients .client-desc {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+#clients .client-im:hover .client-desc,
+#clients .client-im:focus .client-desc {
+    opacity: 0.95;
+    /* background-color: #222; */
+    background-color: var(--warning);
+}
+
+#clients .client-ttl {
+    transform: translateY(15px);
+}
+
+#clients .client-im:hover .client-ttl,
+#clients .client-im:hover .client-location,
+#clients .client-im:focus .client-ttl,
+#clients .client-im:focus .client-location {
+    transform: none;
+}
+
+#clients .client-location {
+    transform: translateX(15px);
+}
+
+#mgtNav .mgt-img {
+    width: 4rem;
+    height: 4rem;
+}
+
+#mgtNav .nav-link.active .mgt-img {
+    transform: scale(1.15);
+}
+
+#mgtNav .nav-item .mgt-img::after {
+    opacity: 0.6;
+    background-color: currentColor;
+    transition: inherit;
+}
+
+#mgtNav .nav-link.active .mgt-img::after {
+    opacity: 1;
+    box-shadow: 0 0 0 2px currentColor;
+    background-color: transparent;
+}
+
+.mgt-mn-img {
+    height: 23rem;
+}
+
+@media screen and (max-width: 767px) {
+    #introducton2Icon {
+        font-size: 14.5rem;
+    }
+    #process ol {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #process li::marker {
+        font-size: 1.6rem;
+    }
+    #process ol p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #process ol {
+        padding-left: 2rem !important;
+    }
+    #process li::marker {
+        font-size: 1.2rem;
+    }
+    #mgtNav .mgt-img {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+}
+
+#mgtNav .nav-item:first-child .nav-link {
+    color: var(--orange);
+}
+
+#mgtNav .nav-item:nth-child(2) .nav-link {
+    color: #ff2100;
+}
+
+#mgtNav .nav-item:nth-child(3) .nav-link {
+    color: #e83e6f;
+}
+
+#mgtNav .nav-item:nth-child(4) .nav-link {
+    color: #a642c1;
+}
+
+#mgtNav .nav-item:nth-child(5) .nav-link {
+    color: #7f10f2;
+}

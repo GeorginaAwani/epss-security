@@ -1,5 +1,4 @@
 <?php
-// action must be given
 require_once '__testimonials.php';
 
 $Administrator = new Administrator;

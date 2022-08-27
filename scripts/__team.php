@@ -5,7 +5,6 @@ require_once 'functions.php';
 class Team extends DBConnections
 {
 	private $table = 'team_members';
-	private $ROOT = ROOT;
 
 	private function team_folder()
 	{
@@ -50,7 +49,7 @@ class Team extends DBConnections
 				$description = $record['description'];
 				$file = $record['image_file'];
 
-				$imgSrc = "/epss/files/team/{$file}";
+				$imgSrc = "{$this->MEDIA_ROOT}files/team/{$file}";
 				echo "
 				<tr data-member-id='$mid'>
 					<td>
@@ -183,7 +182,7 @@ class Team extends DBConnections
 				$record = $query->fetch_assoc();
 				$mid = $record['member_id'];
 
-				$imgSrc = "/epss/files/team/{$record['image_file']}";
+				$imgSrc = "{$this->MEDIA_ROOT}files/team/{$record['image_file']}";
 
 				$active = $i === 0 ? 'active' : '';
 				$fade = $i === 0 ? 'active' : 'fade';

@@ -15,7 +15,6 @@ switch ($action) {
 		// get all team members
 	case 'get':
 		$Team->getTableData();
-
 		die();
 
 	// create a new member

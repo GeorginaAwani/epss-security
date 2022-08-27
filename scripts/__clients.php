@@ -5,7 +5,6 @@ require_once 'functions.php';
 class Clients extends DBConnections
 {
 	private $table = 'clients';
-	private $ROOT = ROOT;
 
 	private function clients_folder()
 	{
@@ -173,7 +172,7 @@ class Clients extends DBConnections
 				$cid = $record['client_id'];
 				$name = $record['name'];
 
-				$imgSrc = "/epss/files/clients/{$record['image_file']}";
+				$imgSrc = "{$this->MEDIA_ROOT}files/clients/{$record['image_file']}";
 
 				++$displayed;
 

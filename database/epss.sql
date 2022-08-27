@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2022 at 04:10 PM
+-- Generation Time: Aug 27, 2022 at 03:01 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -61,6 +61,21 @@ CREATE TABLE `admin_log` (
   `date` timestamp NOT NULL DEFAULT current_timestamp(),
   `successful` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin_log`
+--
+
+INSERT INTO `admin_log` (`log_id`, `user_id`, `credentials`, `date`, `successful`) VALUES
+(1, 1, 'daae6528a62894a012e685b10a8844ce', '2022-05-26 07:09:27', 0),
+(2, 1, 'b78ee2c0257863a583eb6074b14afd39', '2022-05-26 07:09:31', 1),
+(3, 1, '5c3303aeb646f028069cbe276e80e949', '2022-06-03 14:26:01', 0),
+(4, 1, 'ca403a1b4fcb5785a7201e1c2736e96d', '2022-06-03 14:26:06', 0),
+(5, 1, '679f2d84d0f59eadbcaab8c397d35bf3', '2022-06-03 14:26:11', 1),
+(6, 1, 'c97ad6bba76dd8f3edf35adc0f0c0198', '2022-06-10 08:20:18', 1),
+(7, 1, '9760b2b5e4c651eb37e15b4f4aa491de', '2022-06-17 18:55:01', 1),
+(8, 1, '3081c0bcbacbbddb16e3218c22cc9c40', '2022-07-19 18:18:13', 0),
+(9, 1, '51c2456c7eaf6f8641a938235aa307c9', '2022-07-19 18:18:18', 1);
 
 -- --------------------------------------------------------
 
@@ -233,7 +248,7 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`service_id`, `name`, `description`, `excerpt`, `image_file`, `icon`) VALUES
 (1, 'Guard Services', 'We offer armed and unarmed guard services, close executive protection and vehicle escort, as well as train security personnels. Guard services are available for residential, industrial or corporate use, including aviation security, cargo security and concierge services.', 'Armed and unarmed guard services, close executive protection and vehicle escorts.', '92b35ec4444128457f80448ccd558221.jpg', 'fa-solid fa-shield-blank'),
-(2, 'Electronic Surveillance', 'E-surveillance technologies allow a broader and more secure range of security services aimed at protecting you, your staff and your assests. We offer installation and management of alarm systems, drone surveillance, closed circuit television (CCTV) systems and intrustion/fire alarms. Our Central Station monitors your security, fire and life safety systems around the clock.', 'E-surveillance technologies allow a broader and more secure range of security services.', 'cctv.jpg', 'fa-solid fa-bell'),
+(2, 'Electronic Surveillance', 'E-surveillance technologies allow a broader and more secure range of security services aimed at protecting you, your staff and your assests. We offer installation and management of alarm systems, drone surveillance, Closed Circuit Television (CCTV) systems and intrustion/fire alarms. Our Central Station monitors your security, fire and life safety systems around the clock.', 'E-surveillance technologies allow a broader and more secure range of security services.', 'cctv.jpg', 'fa-solid fa-bell'),
 (3, 'Marine & Port Security', 'We carry out offshore and in-transit operations for ports, ships, shipping terminals, ship channels, cruise lines and pipelines. Our services include naval escorts, coastline surveillance and transits, as well as vulnerability assessment, port security operations training and command centre control.', 'Offshore and in-transit operations for ports, ships and shipping terminals.', 'port.jpg', 'fa-solid fa-ship'),
 (4, 'Logistics', 'We support your backend operations by providing services such as accomodation, ground transportation, support staffing, community liaison, air transportation (helicopter and private jets), and 24-hour action plan.', 'Services that support your backend operations such as accomodation and transportation.', 'cars.jpg', 'fa-solid fa-bus-simple'),
 (5, 'Assessment & Audit', 'Our security audit experts perform full sweeps and risk assessments to uncover weaknesses and security gaps in existing security measures, or lack of thereof. We also offer full recommendations, derived from the assessment which establishes an effective security plan.', 'Sweeps and risk assessments to analyse weaknesses and security gaps.', 'lock.jpg', 'fa-solid fa-crosshairs');
@@ -388,7 +403,7 @@ ALTER TABLE `administrators`
 -- AUTO_INCREMENT for table `admin_log`
 --
 ALTER TABLE `admin_log`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `awards`
@@ -418,7 +433,7 @@ ALTER TABLE `gallery`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `news_media`

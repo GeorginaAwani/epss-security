@@ -5,7 +5,6 @@ class News extends DBConnections
 {
 	private $table = 'news';
 	private $media_table = 'news_media';
-	private $ROOT = ROOT;
 
 	private function news_folder()
 	{
@@ -349,7 +348,7 @@ class News extends DBConnections
 
 					// $media = media_file($filename, $filetype, $desc, 'news');
 
-					$src = "/epss/files/news/$filename";
+					$src = "{$this->MEDIA_ROOT}files/news/$filename";
 
 					if ($filetype === 'image') {
 						$media = "<div class='single-media'><img src='$src' class='img-fluid' alt='$desc'/></div>";

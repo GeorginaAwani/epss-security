@@ -5,7 +5,6 @@ require_once 'functions.php';
 class Services extends DBConnections
 {
 	private $table = 'services';
-	private $ROOT = ROOT;
 
 	private function services_folder()
 	{
@@ -245,7 +244,7 @@ class Services extends DBConnections
 					</div>
 					<div class='col-sm-5'>
 						<div class='position-relative overlay service-img'>
-							<img src='/epss/files/services/$filename' alt='' class='img-fluid'>
+							<img src='{$this->MEDIA_ROOT}files/services/$filename' alt='' class='img-fluid'>
 						</div>
 					</div>
 				</div>

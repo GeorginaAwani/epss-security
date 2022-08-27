@@ -11,6 +11,7 @@ $action = $_POST['a'];
 
 $userId = $_SESSION[Administrator::SESSION_USER_ID];
 $ROOT = ROOT;
+$MEDIA_ROOT = MEDIA_ROOT;
 
 define('ADMIN_FOLDER', "{$ROOT}/files/admin/");
 $ADMIN_FOLDER = ADMIN_FOLDER;
@@ -24,7 +25,7 @@ switch ($action) {
 			'id' => $userId,
 			'user' => $_SESSION[Administrator::SESSION_USERNAME],
 			'name' => $_SESSION[Administrator::SESSION_FULLNAME],
-			'profile' => "/epss/files/admin/{$_SESSION[Administrator::SESSION_PROFILE_IMG]}",
+			'profile' => "{$MEDIA_ROOT}files/admin/{$_SESSION[Administrator::SESSION_PROFILE_IMG]}",
 			'role' => $_SESSION[Administrator::SESSION_ROLE],
 			'date' => $_SESSION[Administrator::SESSSION_DATE]
 		];

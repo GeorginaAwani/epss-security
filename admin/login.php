@@ -1,5 +1,7 @@
 <?php
 require_once "{$_SERVER['DOCUMENT_ROOT']}/epss/scripts/functions.php";
+# require_once "{$_SERVER['DOCUMENT_ROOT']}/scripts/functions.php";
+
 $ROOT = ROOT;
 
 $Administrator = new Administrator;
@@ -27,7 +29,7 @@ if ($Administrator->isLoggedIn()) header('Location: index.php');
 		<div class="row h-100">
 			<div class="col-md-6 p-5">
 				<div>
-					<a href="/epss/index.php">
+					<a href="<?=MEDIA_ROOT?>index.php">
 						<img src="../logos/logo.jpg" alt="EPSS Logo" id="logo">
 					</a>
 					<div class="font-sm font-weight-bold ml-2 text-uppercase text-black-50">Admin</div>

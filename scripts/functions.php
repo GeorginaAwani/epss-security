@@ -2,6 +2,9 @@
 
 define('DATETIME_FORMAT', 'j M, Y - g:ia');
 define('ROOT', "{$_SERVER['DOCUMENT_ROOT']}/epss");
+define('MEDIA_ROOT', '/epss/');
+# define('ROOT', "{$_SERVER['DOCUMENT_ROOT']}");
+# define('MEDIA_ROOT', '/');
 
 class DBConnections
 {
@@ -9,6 +12,13 @@ class DBConnections
 	private $db_name = 'epss';
 	private $db_user = 'Georgina';
 	private $db_pass = 'IAmLocalhost!';
+
+	protected $ROOT = ROOT;
+	protected $MEDIA_ROOT = MEDIA_ROOT;
+
+	# private $db_name = 'id19293538_epss';
+	# private $db_user = 'id19293538_georgina';
+	# private $db_pass = 'IAmEPSSSecurity!5';
 
 	/**
 	 * Returns a PDO object with all connections
@@ -273,7 +283,7 @@ class Administrator extends DBConnections
 		if ($profile === 0) $profile = $_SESSION[self::SESSION_PROFILE_IMG];
 
 		if (!$profile) return '<div class="bg-light border border-light pfp rounded-lg"></div>';
-		else return "<div class='bg-img border pfp rounded-lg border-light'><img src='/epss/files/admin/${profile}'/></div>";
+		else return "<div class='bg-img border pfp rounded-lg border-light'><img src='{$this->MEDIA_ROOT}files/admin/${profile}'/></div>";
 	}
 
 	public function logOut()
@@ -310,7 +320,7 @@ class Administrator extends DBConnections
 
 function media_file($filename, $filetype, $description, $folder)
 {
-	$src = "/epss/files/$folder/$filename";
+	$src = MEDIA_ROOT . "files/$folder/$filename";
 
 	if ($filetype === 'image') {
 		return "<div class='media bg-img' style='background-image: url($src);'><img src='$src' class='sr-only' alt='$description'/></div>";

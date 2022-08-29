@@ -1,5 +1,5 @@
 <?php
-require_once "{$_SERVER['DOCUMENT_ROOT']}/epss/scripts/functions.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/scripts/functions.php";
 $ROOT = ROOT;
 
 $Administrator = new Administrator;

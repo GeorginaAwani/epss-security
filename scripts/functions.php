@@ -1,7 +1,7 @@
 <?php
 
 define('DATETIME_FORMAT', 'j M, Y - g:ia');
-define('ROOT', "{$_SERVER['DOCUMENT_ROOT']}/epss");
+define('ROOT', "{$_SERVER['DOCUMENT_ROOT']}");
 
 class DBConnections
 {

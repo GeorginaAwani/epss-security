@@ -212,7 +212,10 @@ $conn = $Services->conn();
 		</div>
 	</section>
 
-	<?php include_once 'components/footer.php' ?>
+	<?php 
+		include_once 'components/footer.php';
+		$conn->close();
+	?>
 </body>
 
 <script>

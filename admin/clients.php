@@ -91,7 +91,8 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 	$(document).ready(function() {
 		activateNav($('#cNav'));
 
-		const _clients = '/scripts/_clients.php';
+		// const _clients = '/scripts/_clients.php';
+		const _clients = '/epss/scripts/_clients.php';
 
 		$('#clientsAllToggle').on('show.bs.tab', function() {
 			$('#clientsTable tbody').html('<td colspan="3"><div class="text-center"><i class="fa-solid fa-spinner fa-spin"></i></div></td>');

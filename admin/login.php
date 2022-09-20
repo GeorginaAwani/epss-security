@@ -63,7 +63,8 @@ if ($Administrator->isLoggedIn()) header('Location: index.php');
 
 <script>
 	$(document).ready(function() {
-		const _login = '/scripts/_login.php';
+		const _login = '/epss/scripts/_login.php';
+		// const _login = '/scripts/_login.php';
 
 		// login form is submitted
 		$('#loginForm').submit(function(e) {

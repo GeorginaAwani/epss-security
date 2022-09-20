@@ -115,7 +115,8 @@
 	$(document).ready(function() {
 		activateNav($('#nENav'));
 
-		const _news = '/scripts/_news.php';
+		// const _news = '/scripts/_news.php';
+		const _news = '/epss/scripts/_news.php';
 
 		function getEventDate() {
 			var d = $('#ed').prop('valueAsDate');

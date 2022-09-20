@@ -310,9 +310,12 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 
 <script>
 	$(document).ready(function() {
-		const _team = '/scripts/_team.php';
-		const _services = '/scripts/_services.php';
-		const _testimonials = '/scripts/_testimonials.php';
+		// const _team = '/scripts/_team.php';
+		const _team = '/epss/scripts/_team.php';
+		// const _services = '/scripts/_services.php';
+		const _services = '/epss/scripts/_services.php';
+		// const _testimonials = '/scripts/_testimonials.php';
+		const _testimonials = '/epss/scripts/_testimonials.php';
 
 		activateNav($('#dBNav'));
 

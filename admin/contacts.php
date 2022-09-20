@@ -55,7 +55,8 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 	$(document).ready(function() {
 		activateNav($('#ctcNav'));
 
-		const _contacts = '/scripts/_contacts.php';
+		// const _contacts = '/scripts/_contacts.php';
+		const _contacts = '/epss/scripts/_contacts.php';
 
 		function loadContacts() {
 			$('#contactsTable tbody').html('<td colspan="3"><div class="text-center"><i class="fa-solid fa-spinner fa-spin"></i></div></td>');

@@ -172,7 +172,8 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 	$(document).ready(function() {
 		'use strict';
 
-		const _account = '/scripts/_account.php';
+		// const _account = '/scripts/_account.php';
+		const _account = '/epss/scripts/_account.php';
 
 		$('#mainToggle').on('shown.bs.tab', function() {
 			$.post(_account, {a: 'a'}, function(d, s){

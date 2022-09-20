@@ -53,7 +53,7 @@
 	$(document).ready(function() {
 		$('#mnNavCllps [href="awards.php"]').addClass('active');
 
-		const _awards = '/scripts/_awards.php';
+		const _awards = 'scripts/_awards.php';
 
 		function loadAward(i = null) {
 			var send = {

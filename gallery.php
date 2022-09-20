@@ -45,7 +45,7 @@
 	$(document).ready(function() {
 		$('#mnNavCllps [href="gallery.php"]').addClass('active');
 
-		const _gallery = '/scripts/_gallery.php';
+		const _gallery = 'scripts/_gallery.php';
 
 		function loadAward(i = null) {
 			var send = {

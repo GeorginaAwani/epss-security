@@ -92,7 +92,8 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 	$(document).ready(function() {
 		activateNav($('#glrNav'));
 
-		const _gallery = '/scripts/_gallery.php';
+		// const _gallery = '/scripts/_gallery.php';
+		const _gallery = '/epss/scripts/_gallery.php';
 
 		$('#galleryAllToggle').on('show.bs.tab', function() {
 			$('#galleryTable tbody').html('<td colspan="3"><div class="text-center"><i class="fa-solid fa-spinner fa-spin"></i></div></td>');

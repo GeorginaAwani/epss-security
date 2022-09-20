@@ -92,7 +92,8 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 	$(document).ready(function() {
 		activateNav($('#awNav'));
 
-		const _awards = '/scripts/_awards.php';
+		// const _awards = '/scripts/_awards.php';
+		const _awards = '/epss/scripts/_awards.php';
 
 		$('#awardsAllToggle').on('show.bs.tab', function() {
 			$('#awardsTable tbody').html('<td colspan="3"><div class="text-center"><i class="fa-solid fa-spinner fa-spin"></i></div></td>');

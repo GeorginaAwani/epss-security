@@ -16,7 +16,6 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 	<title>EPSS -- Admin | Awards</title>
 	<link rel="stylesheet" href="../css/admin.css?<?= time() ?>">
 	<script src="../js/admin.js?<?= time() ?>"></script>
-
 </head>
 
 <body class="body-font h-100">

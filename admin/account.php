@@ -34,6 +34,10 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 			height: 8rem;
 		}
 
+		#accountPfp .pfp img{
+			display: none;
+		}
+
 		.dot {
 			width: 5px;
 			height: 5px;

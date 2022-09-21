@@ -12,8 +12,8 @@ if (!$Administrator->isLoggedIn()) header('Location: login.php');
 <head>
 	<?php include_once "{$ROOT}/components/head.php" ?>
 	<title>EPSS -- Admin | Contacts</title>
-	<link rel="stylesheet" href="../css/admin.css?<?= time() ?>">
-	<script src="../js/admin.js?<?= time() ?>"></script>
+	<link rel="stylesheet" href="/css/admin.css?<?= time() ?>">
+	<script src="/js/admin.js?<?= time() ?>"></script>
 
 </head>
 

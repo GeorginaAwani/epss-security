@@ -68,7 +68,7 @@
 	$(document).ready(function() {
 		$('#mnNavCllps [href="news.php"]').addClass('active');
 
-		const _news = 'scripts/_news.php';
+		const _news = '/scripts/_news.php';
 
 		const loader = '<div class="text-center h2 mb-0 loader"><i class="fa-solid fa-spinner fa-spin"></i></div>';
 

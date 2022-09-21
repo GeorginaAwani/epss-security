@@ -4,7 +4,7 @@
 <head>
 	<?php include_once 'components/head.php' ?>
 	<title>EPSS | Services</title>
-	<link rel="stylesheet" href="css/services.css?<?= time() ?>">
+	<link rel="stylesheet" href="/css/services.css?<?= time() ?>">
 </head>
 
 <body class="body-font">

@@ -4,7 +4,7 @@
 <head>
 	<?php include_once 'components/head.php' ?>
 	<title>EPSS | Contact</title>
-	<link rel="stylesheet" href="css/contact.css?<?= time() ?>">
+	<link rel="stylesheet" href="/css/contact.css?<?= time() ?>">
 </head>
 
 <body class="body-font">
@@ -158,7 +158,7 @@
 					o[this.name] = this.value;
 				});
 
-				$.post('scripts/_contacts.php', o, function(d, s) {
+				$.post('/scripts/_contacts.php', o, function(d, s) {
 					try {
 						if (s !== 'success') throw new Error('Ajax failed; status: ' + s);
 

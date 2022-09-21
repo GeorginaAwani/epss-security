@@ -18,7 +18,7 @@ $conn = $Services->conn();
 
 <head>
 	<?php include_once 'components/head.php' ?>
-	<link rel="stylesheet" href="css/index.css?<?= time() ?>">
+	<link rel="stylesheet" href="/css/index.css?<?= time() ?>">
 	<script src="js/jquery.visible.min.js" defer></script>
 	<title>EPSS | Home</title>
 </head>

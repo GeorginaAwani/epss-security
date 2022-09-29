@@ -12,8 +12,8 @@
 <head>
 	<?php include_once "{$ROOT}/components/head.php" ?>
 	<title>EPSS -- Admin | News & Events</title>
-	<link rel="stylesheet" href="/css/admin.css?<?= time() ?>">
-	<script src="/js/admin.js?<?= time() ?>"></script>
+	<link rel="stylesheet" href="/css/admin.css">
+	<script src="/js/admin.js"></script>
 
 </head>
 

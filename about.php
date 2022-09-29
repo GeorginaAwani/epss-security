@@ -12,7 +12,7 @@ $conn = $Team->conn();
 <head>
 	<?php include_once 'components/head.php' ?>
 	<title>EPSS | About</title>
-	<link rel="stylesheet" href="css/about.css?<?= time() ?>">
+	<link rel="stylesheet" href="css/about.css">
 </head>
 
 <body class="body-font">

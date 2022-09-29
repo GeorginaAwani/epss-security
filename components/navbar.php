@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/nav.css?<?= time() ?>">
+<link rel="stylesheet" href="css/nav.css">
 <header id="hd" class="sticky-top">
 	<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm" id="mnNav">
 		<div class="container-fluid">

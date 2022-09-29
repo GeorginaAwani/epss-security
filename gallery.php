@@ -4,7 +4,7 @@
 <head>
 	<?php include_once 'components/head.php' ?>
 	<title>EPSS | Gallery</title>
-	<link rel="stylesheet" href="/css/gallery.css?<?= time() ?>">
+	<link rel="stylesheet" href="/css/gallery.css">
 </head>
 
 <body class="body-font">

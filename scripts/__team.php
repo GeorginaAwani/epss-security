@@ -50,7 +50,7 @@ class Team extends DBConnections
 				$description = $record['description'];
 				$file = $record['image_file'];
 
-				$imgSrc = "/epss/files/team/{$file}";
+				$imgSrc = "/files/team/{$file}";
 				echo "
 				<tr data-member-id='$mid'>
 					<td>
@@ -183,7 +183,7 @@ class Team extends DBConnections
 				$record = $query->fetch_assoc();
 				$mid = $record['member_id'];
 
-				$imgSrc = "/epss/files/team/{$record['image_file']}";
+				$imgSrc = "/files/team/{$record['image_file']}";
 
 				$active = $i === 0 ? 'active' : '';
 				$fade = $i === 0 ? 'active' : 'fade';

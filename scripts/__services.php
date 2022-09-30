@@ -245,7 +245,7 @@ class Services extends DBConnections
 					</div>
 					<div class='col-sm-5'>
 						<div class='position-relative overlay service-img'>
-							<img src='/epss/files/services/$filename' alt='' class='img-fluid'>
+							<img src='/files/services/$filename' alt='' class='img-fluid'>
 						</div>
 					</div>
 				</div>

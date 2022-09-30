@@ -52,7 +52,7 @@ class Gallery extends DBConnections
 				$filetype = $record['filetype'];
 				$desc = $record['description'];
 
-				$src = "/epss/files/gallery/$filename";
+				$src = "/files/gallery/$filename";
 
 				$file = $filetype === 'image' ? "<img class='$mediaClass' data-media-id='$mid' src='$src' alt='$desc'/>" : "<video class='$mediaClass' src='$src' aria-label='$desc'></video>";
 

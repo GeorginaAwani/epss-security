@@ -271,7 +271,7 @@ class Administrator extends DBConnections
 		if ($profile === 0) $profile = $_SESSION[self::SESSION_PROFILE_IMG];
 
 		if (!$profile) return '<div class="bg-light border border-light pfp rounded-lg"></div>';
-		else return "<div class='bg-img border pfp rounded-lg border-light'><img src='/epss/files/admin/${profile}'/></div>";
+		else return "<div class='bg-img border pfp rounded-lg border-light'><img src='/files/admin/${profile}'/></div>";
 	}
 
 	public function logOut()
@@ -308,7 +308,7 @@ class Administrator extends DBConnections
 
 function media_file($filename, $filetype, $description, $folder)
 {
-	$src = "/epss/files/$folder/$filename";
+	$src = "/files/$folder/$filename";
 
 	if ($filetype === 'image') {
 		return "<div class='media bg-img' style='background-image: url($src);'><img src='$src' class='sr-only' alt='$description'/></div>";

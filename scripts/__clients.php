@@ -170,10 +170,10 @@ class Clients extends DBConnections
 
 			for ($i = 0; $i < $rows; ++$i) {
 				$record = $query->fetch_assoc();
-				$cid = $record['client_id'];
+				// $cid = $record['client_id'];
 				$name = $record['name'];
 
-				$imgSrc = "/epss/files/clients/{$record['image_file']}";
+				$imgSrc = "/files/clients/{$record['image_file']}";
 
 				++$displayed;
 

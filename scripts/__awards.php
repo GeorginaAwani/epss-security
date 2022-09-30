@@ -54,7 +54,7 @@ class Awards extends DBConnections
 				echo "
 				<tr data-award-id='$mid'>
 					<td>
-						<div><img class='$mediaClass' data-media-id='$mid' src='/epss/files/awards/$filename' alt='$desc'/></div>
+						<div><img class='$mediaClass' data-media-id='$mid' src='/files/awards/$filename' alt='$desc'/></div>
 					</td>
 					<td>
 						<div class='desc-wp'>$desc</div>
@@ -191,7 +191,7 @@ class Awards extends DBConnections
 				}
 
 				echo "<div class='col-lg-4 d-flex flex-column mb-4 mb-lg-0 award-item img-item' id='award{$aid}'>
-				<a class='award-view-btn flex-fill img-view' href=''><div class='award-img bg-img border overflow-hidden rounded-lg'><img src='/epss/files/awards/$filename' class='img-fluid'/></div></a>
+				<a class='award-view-btn flex-fill img-view' href=''><div class='award-img bg-img border overflow-hidden rounded-lg'><img src='/files/awards/$filename' class='img-fluid'/></div></a>
 
 				<p class='font-sm mb-0 mt-3 text-muted img-text'>$description</p>
 

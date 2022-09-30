@@ -349,7 +349,7 @@ class News extends DBConnections
 
 					// $media = media_file($filename, $filetype, $desc, 'news');
 
-					$src = "/epss/files/news/$filename";
+					$src = "/files/news/$filename";
 
 					if ($filetype === 'image') {
 						$media = "<div class='single-media'><img src='$src' class='img-fluid' alt='$desc'/></div>";

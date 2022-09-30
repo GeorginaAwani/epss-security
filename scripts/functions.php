@@ -42,15 +42,13 @@ class DBConnections
 			$result = $conn->query($query);
 			if (!$result) die($conn->error);
 			return $result;
-		} catch (Exception $e) {
+		} catch (\Throwable $e) {
 			$e = $e->getMessage();
 			echo $e;
 		} finally {
 			//$result->close();
-			if (!is_null($conn))
-				$conn->close();
-			unset($conn);
-			unset($result);
+			if (!is_null($conn)) $conn->close();
+			unset($conn, $result);
 		}
 	}
 

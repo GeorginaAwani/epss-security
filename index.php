@@ -43,22 +43,6 @@ $conn = $Services->conn();
 					</div>
 				</div>
 			</div>
-
-			<!-- <div class="carousel-item">
-				<div role="banner" class="banner bg-img overlay overlay-black position-relative" style="background-image: url(files/news/0e63937cca318b915716e2c44c6098c0.jpg)" id="bann">
-					<div class="container">
-						<div class="position-absolute banner-block v-centered">
-							<h1 class="font-weight-light heading mb-4 text-white banner-heading" id="bannHd">EPSS Celebrates 15th Anniversary with webinar</h1>
-							<p class="lead mb-4 text-light">Theme - Private Security Industry In Nigeria: The need for a new vista</p>
-
-							<div>
-								<a href="http://www.eventbrite.com/e/private-security-industry-nigeria-the-need-for-a-new-vista-tickets-342652983297" class="btn btn-primary ease px-4 py-3 rounded-0" target="_blank">Register</a>
-								<a href="news.php?id=13" class="btn btn-light ml-3 px-4 py-3 rounded-0">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
 		</div>
 
 		<a class="carousel-control-prev" href="#homeCarousel" data-slide="prev" style="opacity: 0; width:5%">

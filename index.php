@@ -240,6 +240,8 @@ $conn = $Services->conn();
 					var to = parseInt($this.attr('data-stat-count'));
 					var estimate = $this.attr('data-stat-estimate') === 'true';
 
+					if(!to) return;
+
 					var count = 0;
 
 					var statInterval = null;

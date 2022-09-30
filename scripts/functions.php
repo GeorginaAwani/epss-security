@@ -6,9 +6,9 @@ define('ROOT', "{$_SERVER['DOCUMENT_ROOT']}");
 class DBConnections
 {
 	private $db_host = 'localhost';
-	private $db_name = 'epss';
-	private $db_user = 'Georgina';
-	private $db_pass = 'IAmLocalhost!';
+	private $db_name = 'epsssecurity_epss';
+	private $db_user = 'epsssecurity_admin';
+	private $db_pass = 'IAmEPSSSecurity!5';
 
 	/**
 	 * Returns a PDO object with all connections
